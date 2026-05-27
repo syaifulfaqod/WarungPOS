@@ -8,6 +8,7 @@ import Products from './pages/Products';
 import History from './pages/History';
 import Reports from './pages/Reports';
 import Users from './pages/Users';
+import Debts from './pages/Debts';
 
 const ProtectedRoute = ({ children }) => {
   const { currentUser } = useAppContext();
@@ -27,6 +28,7 @@ function AppRoutes() {
         <Route path="pos" element={<Pos />} />
         <Route path="products" element={<Products />} />
         <Route path="history" element={<History />} />
+        <Route path="debts" element={<Debts />} />
         <Route path="reports" element={<Reports />} />
         <Route path="users" element={<Users />} />
       </Route>

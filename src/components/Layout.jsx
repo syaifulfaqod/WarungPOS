@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, ShoppingCart, Package, History, Users, BarChart3, LogOut, Menu, X } from 'lucide-react';
+import { LayoutDashboard, ShoppingCart, Package, History, Users, BarChart3, LogOut, Menu, X, BookOpen } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 
 export default function Layout() {
@@ -18,6 +18,7 @@ export default function Layout() {
     { path: '/pos', name: 'Kasir (POS)', icon: <ShoppingCart size={20} />, roles: ['Owner', 'Kasir'] },
     { path: '/products', name: 'Produk', icon: <Package size={20} />, roles: ['Owner'] },
     { path: '/history', name: 'Riwayat Transaksi', icon: <History size={20} />, roles: ['Owner', 'Kasir'] },
+    { path: '/debts', name: 'Buku Hutang', icon: <BookOpen size={20} />, roles: ['Owner', 'Kasir'] },
     { path: '/reports', name: 'Laporan', icon: <BarChart3 size={20} />, roles: ['Owner'] },
     { path: '/users', name: 'Manajemen User', icon: <Users size={20} />, roles: ['Owner'] },
   ];

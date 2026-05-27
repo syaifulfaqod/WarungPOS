@@ -29,6 +29,7 @@ export default function Users() {
     }
     const newUser = {
       id: Date.now(),
+      storeId: currentUser.storeId || 'STORE-DEFAULT',
       ...formData
     };
     setUsers([...users, newUser]);
